@@ -1,21 +1,40 @@
-##Smart Expense Tracker
-#Overview
+# Smart Expense Tracker
 
-This is a Python-based expense tracker application that helps users record and analyze daily expenses. The data is stored in a CSV file and visualized using graphs.
+##  Description
 
-Features
-Add new expenses
-Store data in CSV file
-View total and average expenses
-Filter expenses by category
-Generate charts (Bar, Line, Pie, Histogram)
-Files
-expense_tracker.py
-expenses.csv
-README.md
-CSV Format
+Smart Expense Tracker is a Python-based application that helps users record, manage, and analyze their daily expenses. The program stores data in a CSV file and generates summary reports and visualizations.
+
+##  Features
+
+* Add daily expenses
+* Save data in CSV file
+* View total and average spending
+* Filter expenses by category
+* Generate visual reports
+* Simple and user-friendly structure
+
+##  Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+
+## CSV Format
+
+The CSV file should contain:
 
 Date, Amount, Category, Description
 
 Example:
 2026-04-01, 250, Food, Lunch
+2026-04-02, 120, Transport, Bus fare
+
+## Output
+
+* Expense summary (total & average)
+* Category-wise analysis
+* Graphs (Bar, Line, Pie, Histogram)
+
+Smart Expense Tracker Project

@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
 class ExpenseTracker:
 
     def __init__(self):
@@ -78,24 +77,20 @@ class ExpenseTracker:
 
     def visualize(self):
 
-        plt.figure()
         sns.barplot(x="Category", y="Amount", data=self.df)
         plt.title("Total Expense by Category")
         plt.show()
 
-        plt.figure()
         plt.plot(self.df["Amount"])
         plt.title("Spending Trend")
         plt.show()
 
-        plt.figure()
         self.df.groupby("Category")["Amount"].sum().plot(
             kind="pie", autopct="%1.1f%%"
         )
         plt.title("Category Distribution")
         plt.show()
 
-        plt.figure()
         plt.hist(self.df["Amount"])
         plt.title("Expense Histogram")
         plt.show()
